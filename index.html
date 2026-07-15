@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page de marca personal de David Todolí. Consultor de estrategia, marketing digital y transformación operativa.">
+  <title>David Todolí | Estrategia Digital & Transformación Operativa</title>
+  
+  <link rel="stylesheet" href="css/styles.css?v=1.0.2">
+</head>
+<body>
+
+  <!-- --- Custom Cursor --- -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+
+  <!-- --- INTRODUCCIÓN DE APERTURA --- -->
+  <!-- --- INTRODUCCIÓN DE APERTURA --- -->
+  <!-- --- INTRODUCCIÓN DE APERTURA (Typographic Kinetic Slide) --- -->
+  <div id="intro-container" class="intro-active">
+    <div class="intro-kinetic-wrapper">
+      <div class="intro-kinetic-list">
+        <div class="kinetic-item" id="item-1">
+          <span class="kinetic-num">01 //</span>
+          <span class="kinetic-word">ANALIZAR</span>
+          <span class="kinetic-tag">[ DATA_STUDY ]</span>
+        </div>
+        <div class="kinetic-item" id="item-2">
+          <span class="kinetic-num">02 //</span>
+          <span class="kinetic-word">DISEÑAR</span>
+          <span class="kinetic-tag">[ STRATEGY ]</span>
+        </div>
+        <div class="kinetic-item" id="item-3">
+          <span class="kinetic-num">03 //</span>
+          <span class="kinetic-word">CONSTRUIR</span>
+          <span class="kinetic-tag">[ SYSTEMS ]</span>
+        </div>
+        <div class="kinetic-item" id="item-4">
+          <span class="kinetic-num">04 //</span>
+          <span class="kinetic-word">OPTIMIZAR</span>
+          <span class="kinetic-tag">[ GROWTH ]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-wrapper">
+    <!-- --- Header / Navegación (Sidebar Izquierda en Desktop) --- -->
+    <header class="site-header" id="site-header">
+    <!-- Bloque Superior: Logo, Subtítulo, Status y Burger -->
+    <div class="header-top">
+      <div class="logo-wrapper">
+        <a href="#hero" class="logo" id="logo-link">DAVID TODOLÍ</a>
+        <span class="header-subtitle">Estrategia & Operaciones IA</span>
+      </div>
+      
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span class="status-text">Disponible</span>
+      </div>
+      
+      <button class="burger-btn" id="burger-btn" aria-label="Abrir menú" aria-expanded="false">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+
+    <!-- Bloque Medio: Navegación Vertical -->
+    <nav class="nav-container" aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="#aportar" class="nav-link" id="nav-aportar"><span class="nav-num">01</span> Aporte</a></li>
+        <li><a href="#metodologia" class="nav-link" id="nav-metodologia"><span class="nav-num">02</span> Competencias</a></li>
+        <li><a href="#caso-principal" class="nav-link" id="nav-tuateam"><span class="nav-num">03</span> TUATEAM</a></li>
+        <li><a href="#casos" class="nav-link" id="nav-casos"><span class="nav-num">04</span> Casos</a></li>
+        <li><a href="#evidencias" class="nav-link" id="nav-evidencias"><span class="nav-num">05</span> Evidencias</a></li>
+        <li><a href="#contacto" class="nav-link" id="nav-contacto"><span class="nav-num">06</span> Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Bloque Inferior: Fecha dinámica y Redes Sociales -->
+    <div class="header-bottom">
+      <div class="header-meta">
+        <span class="meta-city">Valencia, ES</span>
+        <span class="meta-date" id="live-date">Cargando...</span>
+      </div>
+      <div class="header-socials">
+        <a href="https://www.linkedin.com/in/david-todoli-fortu%C3%B1o-782a7b206/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:Davidtodoli01@gmail.com" class="social-link" aria-label="Email">Email</a>
+        <a href="assets/documents/cv_david_todoli.pdf" download="CV_David_Todoli.pdf" class="social-link" aria-label="Descargar CV">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <main class="main-content">
+    <!-- --- 01. Hero --- -->
+    <section class="hero" id="hero">
+      <div class="container hero-container-grid">
+        <!-- Lado izquierdo: Contenido -->
+        <div class="hero-content">
+          <div class="hero-name-wrapper">
+            <span class="hero-name animate-item-1">DAVID TODOLÍ</span>
+          </div>
+          <h1 class="hero-title animate-item-2">Estrategia, marketing y tecnología para convertir ideas en proyectos con impacto.</h1>
+          <p class="hero-desc animate-item-3">Combino una sólida formación en Economía e Internacionalización con experiencia en estrategia, marketing digital, automatización y gestión de proyectos. Mi objetivo es diseñar soluciones que unan visión de negocio y tecnología para ayudar a las organizaciones a crecer de forma más eficiente, estructurada y sostenible.</p>
+          <div class="hero-ctas animate-item-4">
+            <a href="#contacto" class="btn btn-primary" id="hero-cta-primary">Hablemos</a>
+            <a href="https://wa.me/34644854038" target="_blank" rel="noopener" class="btn btn-secondary btn-whatsapp" id="hero-cta-whatsapp">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px; vertical-align: -2px; display: inline-block;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.326 1.968 13.848.943 11.22.943c-5.445 0-9.87 4.373-9.874 9.8.001 2.12.552 4.189 1.596 5.973l-.999 3.646 3.734-.972zm11.144-7.464c-.268-.134-1.59-.783-1.836-.872-.247-.09-.427-.135-.607.135-.18.27-.697.872-.853 1.05-.157.18-.314.202-.583.068-1.093-.547-1.806-.97-2.522-2.18-.18-.312-.18-.686.069-.873.226-.226.5-.583.75-.875.074-.087.123-.174.184-.294.062-.12.031-.225-.015-.315-.045-.09-.427-1.03-.585-1.41-.154-.372-.323-.322-.427-.327-.11-.006-.236-.008-.363-.008-.127 0-.334.047-.509.24-.175.192-.667.652-.667 1.59s.683 1.84 1.776 1.99c.11.015 2.152 3.284 5.213 4.605.728.314 1.296.501 1.739.641.73.232 1.396.2 1.922.12.585-.088 1.59-.649 1.815-1.277.225-.627.225-1.165.157-1.277-.067-.113-.247-.18-.515-.315z"/></svg>
+              Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+        
+        <!-- Lado derecho: Elemento visual de diseño -->
+        <div class="hero-visual animate-item-5">
+          <div class="hero-bg-diagram">
+            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 4">
+              <!-- Grid squares -->
+              <path d="M 0,100 L 400,100 M 0,200 L 400,200 M 0,300 L 400,300 M 100,0 L 100,400 M 200,0 L 200,400 M 300,0 L 300,400" />
+              <!-- Isometric cube graph mapping (same as intro) -->
+              <g stroke="currentColor" stroke-width="1" stroke-dasharray="none">
+                <!-- Perimeter -->
+                <polygon points="200,100 286.6,150 286.6,250 200,300 113.4,250 113.4,150" stroke="var(--accent)" stroke-width="1.5" />
+                <!-- Inner vertices -->
+                <line x1="200" y1="100" x2="200" y2="150" />
+                <line x1="286.6" y1="150" x2="243.3" y2="175" />
+                <line x1="286.6" y1="250" x2="243.3" y2="225" />
+                <line x1="200" y1="300" x2="200" y2="250" />
+                <line x1="113.4" y1="250" x2="156.7" y2="225" />
+                <line x1="113.4" y1="150" x2="156.7" y2="175" />
+                
+                <!-- Inner Hexagon -->
+                <polygon points="200,150 243.3,175 243.3,225 200,250 156.7,225 156.7,175" />
+                
+                <!-- Hub lines -->
+                <line x1="200" y1="200" x2="200" y2="150" />
+                <line x1="200" y1="200" x2="243.3" y2="225" />
+                <line x1="200" y1="200" x2="156.7" y2="225" />
+              </g>
+            </svg>
+          </div>
+          <div class="hero-artwork-frame">
+            <img src="assets/images/portrait.webp" alt="David Todolí - Retrato Principal" class="hero-artwork">
+            <div class="hero-visual-overlay"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Indicador de scroll elegante -->
+      <div class="scroll-indicator animate-item-6" onclick="document.getElementById('aportar').scrollIntoView({behavior: 'smooth'})">
+        <span class="scroll-text">Explorar trayectoria</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 02. ¿Qué puedo aportar? --- -->
+    <section id="aportar" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">¿Qué puedo aportar?</h2>
+        </div>
+        
+        <div class="aportar-editorial-grid">
+          <!-- Bloque 1: Estrategia de Crecimiento (Ancho) -->
+          <div class="aportar-block block-wide block-1" id="aportar-estrategia">
+            <div class="block-num">02.1</div>
+            <div class="block-decor-svg">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">
+                <circle cx="30" cy="90" r="12" stroke="var(--accent)" />
+                <circle cx="90" cy="90" r="12" />
+                <circle cx="60" cy="30" r="12" />
+                <path d="M 60,42 L 30,78 M 60,42 L 90,78 M 42,90 L 78,90" stroke-dasharray="2 3" />
+              </svg>
+            </div>
+            <div class="block-content-wrapper">
+              <div class="block-header">
+                <div class="block-icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 3v18h18M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path></svg>
+                </div>
+                <h3 class="block-title">Estrategia de Crecimiento</h3>
+              </div>
+              <p class="block-desc">He participado en el diseño y desarrollo de iniciativas orientadas al crecimiento empresarial, colaborando en la planificación de acciones comerciales, la priorización de oportunidades y la definición de estrategias adaptadas a diferentes proyectos.</p>
+              <div class="block-focus-list">
+                <span class="focus-item">Planificación estratégica</span>
+                <span class="focus-item">Desarrollo de negocio</span>
+                <span class="focus-item">Priorización de oportunidades</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Bloque 2: Marketing Digital (Estrecho) -->
+          <div class="aportar-block block-narrow block-2" id="aportar-marketing">
+            <div class="block-num">02.2</div>
+            <div class="block-decor-svg">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M 15,30 L 50,30 C 70,30 70,90 90,90 L 105,90" />
+                <path d="M 15,90 L 30,90 C 50,90 50,30 70,30 L 105,30" stroke-dasharray="3 3" />
+                <circle cx="50" cy="30" r="4" fill="currentColor" />
+                <circle cx="70" cy="90" r="4" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="block-content-wrapper">
+              <div class="block-header">
+                <div class="block-icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                </div>
+                <h3 class="block-title">Marketing Digital</h3>
+              </div>
+              <p class="block-desc">He desarrollado proyectos de comunicación digital, diseño web, estrategias de captación y embudos de conversión, participando en la creación de soluciones enfocadas en mejorar la visibilidad y generar nuevas oportunidades de negocio.</p>
+              <div class="block-focus-list">
+                <span class="focus-item">Diseño web</span>
+                <span class="focus-item">Funnels de conversión</span>
+                <span class="focus-item">Estrategia de contenidos</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Bloque 3: Gestión de Proyectos (Estrecho) -->
+          <div class="aportar-block block-narrow block-3" id="aportar-proyectos">
+            <div class="block-num">02.3</div>
+            <div class="block-decor-svg">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">
+                <!-- Grid rows -->
+                <path d="M 10,20 L 110,20 M 10,50 L 110,50 M 10,80 L 110,80 M 10,110 L 110,110" stroke-dasharray="1 4" />
+                <!-- Gantt blocks -->
+                <rect x="25" y="30" width="30" height="10" rx="2" fill="none" stroke="currentColor" />
+                <rect x="60" y="60" width="40" height="10" rx="2" fill="none" stroke="var(--accent)" />
+                <path d="M 55,35 L 60,65" stroke-dasharray="2 2" />
+              </svg>
+            </div>
+            <div class="block-content-wrapper">
+              <div class="block-header">
+                <div class="block-icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                </div>
+                <h3 class="block-title">Gestión de Proyectos</h3>
+              </div>
+              <p class="block-desc">He colaborado en la coordinación de proyectos multidisciplinares, organizando tareas, conectando diferentes áreas de trabajo y asegurando una ejecución alineada con los objetivos de cada proyecto.</p>
+              <div class="block-focus-list">
+                <span class="focus-item">Coordinación de equipos</span>
+                <span class="focus-item">Organización de procesos</span>
+                <span class="focus-item">Gestión multidisciplinar</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Bloque 4: Automatización e IA (Ancho) -->
+          <div class="aportar-block block-wide block-4" id="aportar-automatizacion">
+            <div class="block-num">02.4</div>
+            <div class="block-decor-svg">
+              <svg width="120" height="120" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2">
+                <path d="M 60,15 A 45,45 0 1,1 15,60" />
+                <path d="M 15,60 A 45,45 0 0,1 60,15" stroke-dasharray="3 3" />
+                <!-- Feedback arrows -->
+                <path d="M 60,5 L 60,25 M 50,15 L 70,15" />
+                <!-- Core nodes -->
+                <circle cx="60" cy="60" r="16" stroke="var(--accent)" stroke-width="1" />
+                <line x1="60" y1="44" x2="60" y2="76" />
+                <line x1="44" y1="60" x2="76" y2="60" />
+              </svg>
+            </div>
+            <div class="block-content-wrapper">
+              <div class="block-header">
+                <div class="block-icon">
+                  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3"></path></svg>
+                </div>
+                <h3 class="block-title">Automatización e Inteligencia Artificial</h3>
+              </div>
+              <p class="block-desc">Me interesa especialmente la aplicación de herramientas de automatización e inteligencia artificial para optimizar procesos, reducir tareas repetitivas y mejorar la eficiencia en distintos entornos de trabajo.</p>
+              <div class="block-focus-list">
+                <span class="focus-item">Automatización</span>
+                <span class="focus-item">IA aplicada</span>
+                <span class="focus-item">Optimización de procesos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 03. Competencias y herramientas --- -->
+    <section id="metodologia" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Competencias y herramientas</h2>
+        </div>
+        
+        <div class="skills-tools-grid">
+          <!-- Cajón 1: Competencias -->
+          <div class="skills-cajon competencies-cajon">
+            <div class="cajon-header">
+              <span class="cajon-tag">CAPACIDADES</span>
+              <h3 class="cajon-title">Competencias profesionales</h3>
+            </div>
+            <p class="cajon-intro">A través de mi participación en proyectos académicos y profesionales he desarrollado competencias que me permiten integrarme rápidamente en equipos multidisciplinares y afrontar nuevos retos con una actitud proactiva.</p>
+            
+            <div class="competencies-rows">
+              <div class="competency-row">
+                <span class="comp-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </span>
+                <span class="comp-num">01</span>
+                <span class="comp-text">Pensamiento analítico</span>
+              </div>
+              <div class="competency-row">
+                <span class="comp-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                </span>
+                <span class="comp-num">02</span>
+                <span class="comp-text">Aprendizaje continuo</span>
+              </div>
+              <div class="competency-row">
+                <span class="comp-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                </span>
+                <span class="comp-num">03</span>
+                <span class="comp-text">Organización</span>
+              </div>
+              <div class="competency-row">
+                <span class="comp-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                </span>
+                <span class="comp-num">04</span>
+                <span class="comp-text">Resolución de problemas</span>
+              </div>
+              <div class="competency-row">
+                <span class="comp-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </span>
+                <span class="comp-num">05</span>
+                <span class="comp-text">Comunicación</span>
+              </div>
+              <div class="competency-row">
+                <span class="comp-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </span>
+                <span class="comp-num">06</span>
+                <span class="comp-text">Trabajo en equipo</span>
+              </div>
+              <div class="competency-row">
+                <span class="comp-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
+                </span>
+                <span class="comp-num">07</span>
+                <span class="comp-text">Adaptabilidad</span>
+              </div>
+              <div class="competency-row">
+                <span class="comp-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </span>
+                <span class="comp-num">08</span>
+                <span class="comp-text">Gestión de proyectos</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cajón 2: Herramientas -->
+          <div class="skills-cajon tools-cajon">
+            <div class="cajon-header">
+              <span class="cajon-tag">ECOSISTEMA</span>
+              <h3 class="cajon-title">Herramientas</h3>
+            </div>
+            <p class="cajon-intro">Estas son algunas de las herramientas que he utilizado para desarrollar proyectos relacionados con estrategia, marketing, automatización y gestión empresarial.</p>
+            
+            <div class="tools-categories-wrapper">
+              <div class="tool-category-card">
+                <div class="tool-category-header">
+                  <span class="category-dot"></span>
+                  <span class="tool-category-label">Marketing</span>
+                </div>
+                <div class="tool-badges">
+                  <span class="tool-badge-item">Google Ads</span>
+                  <span class="tool-badge-item">Meta Ads</span>
+                  <span class="tool-badge-item">Google Analytics 4</span>
+                </div>
+              </div>
+              
+              <div class="tool-category-card">
+                <div class="tool-category-header">
+                  <span class="category-dot"></span>
+                  <span class="tool-category-label">Automatización</span>
+                </div>
+                <div class="tool-badges">
+                  <span class="tool-badge-item">GoHighLevel</span>
+                  <span class="tool-badge-item">Make</span>
+                  <span class="tool-badge-item">Zapier</span>
+                  <span class="tool-badge-item">Instantly</span>
+                </div>
+              </div>
+              
+              <div class="tool-category-card">
+                <div class="tool-category-header">
+                  <span class="category-dot"></span>
+                  <span class="tool-category-label">Inteligencia Artificial y Asistentes</span>
+                </div>
+                <div class="tool-badges">
+                  <span class="tool-badge-item">ChatGPT</span>
+                  <span class="tool-badge-item">Gemini</span>
+                  <span class="tool-badge-item">Antigravity</span>
+                </div>
+              </div>
+              
+              <div class="tool-category-card">
+                <div class="tool-category-header">
+                  <span class="category-dot"></span>
+                  <span class="tool-category-label">Diseño y Contenido</span>
+                </div>
+                <div class="tool-badges">
+                  <span class="tool-badge-item">Canva</span>
+                  <span class="tool-badge-item">CapCut</span>
+                  <span class="tool-badge-item">VEED</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 04. Caso principal: TUATEAM --- -->
+    <section id="caso-principal" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Caso principal</h2>
+        </div>
+        
+        <div class="tuateam-case" id="tuateam-case-card">
+          <div class="tuateam-grid">
+            <div class="tuateam-main">
+              <span class="tuateam-badge">CASO PRINCIPAL</span>
+              <h3 class="tuateam-title">TUATEAM</h3>
+              <p class="tuateam-tagline">Estrategia, marketing y automatización para impulsar el crecimiento de una consultora especializada en contratación pública.</p>
+              
+              <div class="tuateam-mission">
+                <strong>Misión:</strong> Mi misión fue contribuir al crecimiento de la empresa fortaleciendo su presencia digital, diseñando soluciones de captación y participando en proyectos que combinaron estrategia, marketing y tecnología.
+                <br><br>
+                Participé tanto en la planificación como en la ejecución de iniciativas orientadas a mejorar la comunicación, optimizar procesos y generar nuevas oportunidades de negocio.
+              </div>
+              
+              <div class="tuateam-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-label">Rol</span>
+                  <span class="highlight-val">Marketing y Desarrollo de Negocio</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-label">Áreas clave</span>
+                  <span class="highlight-val">Estrategia Digital, Marketing, Automatización, Gestión de Proyectos</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-label">Proyecto</span>
+                  <span class="highlight-val">Crecimiento corporativo</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tuateam-side">
+              <div class="tuateam-side-decor">
+                <svg width="220" height="150" viewBox="0 0 220 150" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M 20,130 L 70,110 L 120,60 L 170,80 L 210,20" stroke-width="2" stroke="var(--accent)" />
+                  <circle cx="20" cy="130" r="3" fill="currentColor" />
+                  <circle cx="70" cy="110" r="3" fill="currentColor" />
+                  <circle cx="120" cy="60" r="3" fill="currentColor" />
+                  <circle cx="170" cy="80" r="3" fill="currentColor" />
+                  <circle cx="210" cy="20" r="3" fill="var(--accent)" />
+                  <!-- Axis -->
+                  <path d="M 10,140 L 210,140 M 10,10 L 10,140" stroke-dasharray="1 3" />
+                </svg>
+              </div>
+              <div class="tuateam-side-block">
+                <h4>Contribuciones principales</h4>
+                <ul style="font-size: 0.92rem; line-height: 1.5; padding-left: 1.2rem; margin: 0; color: var(--text-secondary); list-style-type: square;">
+                  <li>Diseño y desarrollo de la página web corporativa.</li>
+                  <li>Diseño de embudos de conversión y procesos de captación.</li>
+                  <li>Estrategia y planificación de contenidos para la marca.</li>
+                  <li>Desarrollo de campañas de comunicación para empresas e instituciones.</li>
+                  <li>Diseño de soluciones digitales adaptadas a clientes.</li>
+                  <li>Apoyo en el desarrollo de asistentes virtuales y aplicaciones.</li>
+                  <li>Coordinación entre perfiles técnicos y de marketing durante distintos proyectos.</li>
+                </ul>
+              </div>
+              <div class="tuateam-side-block">
+                <h4>Principal Aprendizaje</h4>
+                <p style="font-size: 0.95rem; line-height: 1.5; font-style: italic; color: var(--text-secondary);">"Trabajar en TUATEAM me permitió comprobar que la tecnología solo genera valor cuando responde a una necesidad real del negocio. Aprendí a combinar estrategia, marketing y herramientas digitales para potenciar la posición de la marca en el mercado."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 05. Casos de estudio --- -->
+    <section id="casos" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 class="section-title">Otros casos de estudio</h2>
+        </div>
+        
+        <div class="cases-selector" role="tablist">
+          <button class="selector-btn active" id="btn-optica" role="tab" aria-selected="true" aria-controls="case-optica">Comunicación Óptica</button>
+          <button class="selector-btn" id="btn-municipal" role="tab" aria-selected="false" aria-controls="case-municipal">Plan Municipal</button>
+        </div>
+
+        <!-- Caso A: Óptica -->
+        <div class="case-study-content active" id="case-optica" role="tabpanel" aria-labelledby="btn-optica">
+          <div class="case-grid">
+            <div class="case-body">
+              <div class="case-block">
+                <h4>Contexto</h4>
+                <p>Una óptica local disponía de una subvención destinada a impulsar su digitalización. Sin embargo, las soluciones habituales como campañas en redes sociales o estrategias de captación no respondían a sus necesidades reales ni a su modelo de negocio.</p>
+              </div>
+              <div class="case-block">
+                <h4>Desafío</h4>
+                <p>Diseñar una solución que aprovechara la subvención disponible y mejorara la comunicación con los clientes sin alterar el posicionamiento de cercanía y confianza construido por la empresa durante años.</p>
+              </div>
+              <div class="case-block">
+                <h4>Mi intervención</h4>
+                <p>Analicé la situación del negocio y propuse una estrategia de comunicación basada en un soporte físico de alto impacto. Diseñé el contenido y ejecuté la implantación de un sistema de cartelería digital mediante una pantalla instalada en el escaparate.</p>
+              </div>
+              <div class="case-block">
+                <h4>Solución y Valor aportado</h4>
+                <p>La pantalla reproduce de forma continua un carrusel con productos, promociones estacionales, ayudas para lentes e información de interés, convirtiendo el escaparate en un canal permanente de comunicación y captación visual para los peatones.</p>
+              </div>
+            </div>
+            <div class="case-sidebar">
+              <h3 class="sidebar-title">Resumen del Proyecto</h3>
+              <div class="sidebar-item">
+                <span class="sidebar-item-label">Sector</span>
+                <span class="sidebar-item-val">Salud · Comercio Local</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-item-label">Duración</span>
+                <span class="sidebar-item-val">Proyecto puntual</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-item-label">Rol</span>
+                <span class="sidebar-item-val">Diseño de Estrategia y Ejecución</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-item-label">Enfoque</span>
+                <span class="sidebar-item-val">Comunicación Visual · Marketing de Proximidad</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Caso B: Plan Municipal -->
+        <div class="case-study-content" id="case-municipal" role="tabpanel" aria-labelledby="btn-municipal">
+          <div class="case-grid">
+            <div class="case-body">
+              <div class="case-block">
+                <h4>Contexto</h4>
+                <p>Un ayuntamiento obtuvo financiación para desarrollar su polígono industrial y necesitaba ejecutar un plan de comunicación que garantizara la difusión del proyecto entre la ciudadanía y los agentes interesados.</p>
+              </div>
+              <div class="case-block">
+                <h4>Desafío</h4>
+                <p>Diseñar una estrategia de comunicación clara, accesible y centralizada que facilitara el acceso a la información y automatizara parte del proceso de comunicación con los usuarios.</p>
+              </div>
+              <div class="case-block">
+                <h4>Mi intervención</h4>
+                <p>Desarrollé íntegramente el plan de comunicación, diseñando la estrategia, una landing page para el registro de usuarios, una secuencia automatizada de correos electrónicos y un portal web informativo donde centralizar toda la información del proyecto.</p>
+              </div>
+              <div class="case-block">
+                <h4>Solución y Valor aportado</h4>
+                <p>El resultado fue un ecosistema digital que permitió comunicar el proyecto de forma estructurada, automatizar el envío de información a los usuarios registrados y ofrecer un punto único de acceso a toda la documentación e información relevante.</p>
+              </div>
+            </div>
+            <div class="case-sidebar">
+              <h3 class="sidebar-title">Resumen del Proyecto</h3>
+              <div class="sidebar-item">
+                <span class="sidebar-item-label">Sector</span>
+                <span class="sidebar-item-val">Administración Pública</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-item-label">Duración</span>
+                <span class="sidebar-item-val">Proyecto puntual</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-item-label">Rol</span>
+                <span class="sidebar-item-val">Diseño y Ejecución del Plan de Comunicación</span>
+              </div>
+              <div class="sidebar-item">
+                <span class="sidebar-item-label">Enfoque</span>
+                <span class="sidebar-item-val">Comunicación Institucional · Automatización · Desarrollo Web</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 06. Evidencias --- -->
+    <section id="evidencias" class="reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2 class="section-title">Evidencias</h2>
+        </div>
+        <p style="max-width: 700px; margin-bottom: var(--spacing-md);">Documentos y respaldos académicos/profesionales que avalan mi trayectoria y capacidades de ejecución estratégica:</p>
+        
+        <div class="evidence-grid">
+          <!-- Evidencia 1 -->
+          <div class="evidence-card" id="evidence-card-1">
+            <div class="evidence-decor-svg">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                <circle cx="20" cy="20" r="12" />
+                <circle cx="20" cy="20" r="6" stroke="var(--accent)" />
+                <line x1="20" y1="5" x2="20" y2="35" stroke-dasharray="2 2" />
+                <line x1="5" y1="20" x2="35" y2="20" stroke-dasharray="2 2" />
+              </svg>
+            </div>
+            <div class="evidence-meta">
+              <span class="evidence-badge">PROFESIONAL</span>
+              <h3 class="evidence-title">Carta de recomendación profesional</h3>
+              <p class="evidence-desc">Recomendación emitida por TUATEAM S.L. en la que se destaca mi implicación, capacidad para liderar proyectos, iniciativa, responsabilidad y aportación al crecimiento de la empresa mediante estrategias de marketing, automatización y desarrollo de soluciones digitales.</p>
+            </div>
+            <a href="assets/documents/carta_recomendacion_profesional.pdf" download="carta_recomendacion_profesional.pdf" class="evidence-action">
+              Ver documento 
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-left: 4px;"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+          <!-- Evidencia 2 -->
+          <div class="evidence-card" id="evidence-card-2">
+            <div class="evidence-decor-svg">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                <path d="M 10,25 L 18,15 L 25,20 L 32,8" stroke="var(--accent)" />
+                <rect x="5" y="30" width="30" height="5" />
+              </svg>
+            </div>
+            <div class="evidence-meta">
+              <span class="evidence-badge">ACADÉMICO</span>
+              <h3 class="evidence-title">Carta de recomendación académica</h3>
+              <p class="evidence-desc">Carta emitida por mi profesor de Estrategia para Empresas Internacionales, asignatura en la que obtuve Matrícula de Honor. En ella se pone en valor mi capacidad analítica, compromiso académico, pensamiento estratégico y desempeño durante el Máster en Internacionalización Económica y Gestión del Comercio Internacional.</p>
+            </div>
+            <a href="assets/documents/carta_recomendacion_academica.pdf" download="carta_recomendacion_academica.pdf" class="evidence-action">
+              Ver documento 
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-left: 4px;"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+          <!-- Evidencia 3 -->
+          <div class="evidence-card" id="evidence-card-3">
+            <div class="evidence-decor-svg">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                <circle cx="20" cy="20" r="14" />
+                <path d="M 12,20 L 18,25 L 28,14" />
+              </svg>
+            </div>
+            <div class="evidence-meta">
+              <span class="evidence-badge">INVESTIGACIÓN</span>
+              <h3 class="evidence-title">Trabajo Fin de Máster</h3>
+              <p class="evidence-desc">Plan de Internacionalización para TUATEAM S.L. orientado a la entrada en el mercado chileno mediante una alianza estratégica local. El proyecto integra análisis estratégico, estudio financiero, marketing internacional, automatización e inteligencia artificial aplicada al proceso de expansión empresarial.</p>
+            </div>
+            <a href="assets/documents/trabajo_fin_de_master.pdf" download="trabajo_fin_de_master.pdf" class="evidence-action">
+              Consultar proyecto 
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-left: 4px;"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Divisor sutil y subcabecera para Respaldo Académico -->
+        <div class="evidence-sub-block">
+          <div class="evidence-sub-header">
+            <h3 class="evidence-sub-title">Respaldo académico</h3>
+          </div>
+          <div class="education-list">
+            <div class="education-item" id="edu-master">
+              <h3 class="edu-title">Máster en Internacionalización Económica y Gestión del Comercio Internacional</h3>
+              <span class="edu-institution">Universitat de València</span>
+            </div>
+            <div class="education-item" id="edu-grado">
+              <h3 class="edu-title">Grado en Economía</h3>
+              <span class="edu-institution">Universitat de València</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divisor sutil y subcabecera para Otras Experiencias -->
+        <div class="evidence-sub-block">
+          <div class="evidence-sub-header">
+            <h3 class="evidence-sub-title">Otras experiencias</h3>
+          </div>
+          <p class="section-intro">Experiencias y colaboraciones complementarias que han consolidado mis capacidades operativas y de comunicación:</p>
+          
+          <div class="extra-exp-grid">
+            <!-- Bloque 1: Veteranos eSports -->
+            <div class="extra-exp-card" id="exp-esports">
+              <div class="evidence-decor-svg">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                  <!-- Social network graph nodes -->
+                  <circle cx="20" cy="15" r="4" stroke="var(--accent)" />
+                  <circle cx="10" cy="28" r="3" />
+                  <circle cx="30" cy="28" r="3" />
+                  <line x1="20" y1="19" x2="10" y2="25" />
+                  <line x1="20" y1="19" x2="30" y2="25" />
+                  <line x1="13" y1="28" x2="27" y2="28" stroke-dasharray="2 2" />
+                </svg>
+              </div>
+              <div class="exp-card-header">
+                <div class="exp-header-main">
+                  <span class="exp-org">Veteranos eSports</span>
+                  <h3 class="exp-role">Social Media Manager</h3>
+                </div>
+                <span class="exp-duration">2 años</span>
+              </div>
+              <p class="exp-desc">Participé en la gestión de la estrategia de contenidos y la comunicación digital del club, planificando publicaciones, fortaleciendo la identidad de marca y fomentando la interacción con la comunidad.</p>
+              <div class="exp-skills">
+                <h4 class="skills-title">Competencias</h4>
+                <div class="skills-list">
+                  <span class="focus-item">Estrategia de contenidos</span>
+                  <span class="focus-item">Branding digital</span>
+                  <span class="focus-item">Gestión de comunidades</span>
+                  <span class="focus-item">Creación de contenido</span>
+                  <span class="focus-item">Comunicación</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Bloque 2: Profesor Particular -->
+            <div class="extra-exp-card" id="exp-profesor">
+              <div class="evidence-decor-svg">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1">
+                  <!-- Demand/Supply curve plot -->
+                  <path d="M 5,32 L 35,32 M 8,5 L 8,35" stroke-dasharray="2 2" />
+                  <path d="M 12,12 C 18,22 28,26 34,28" stroke="var(--accent)" stroke-width="1.5" />
+                  <path d="M 12,28 C 18,22 28,14 34,8" />
+                </svg>
+              </div>
+              <div class="exp-card-header">
+                <div class="exp-header-main">
+                  <span class="exp-org">Profesor Particular</span>
+                  <h3 class="exp-role">Economía y Matemáticas</h3>
+                </div>
+              </div>
+              <p class="exp-desc">Acompañé a estudiantes en su aprendizaje mediante una metodología adaptada a cada perfil, desarrollando habilidades de comunicación, organización y resolución de problemas.</p>
+              <div class="exp-skills">
+                <h4 class="skills-title">Competencias</h4>
+                <div class="skills-list">
+                  <span class="focus-item">Comunicación</span>
+                  <span class="focus-item">Adaptación</span>
+                  <span class="focus-item">Organización</span>
+                  <span class="focus-item">Pensamiento analítico</span>
+                  <span class="focus-item">Planificación</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --- 07. Contacto --- -->
+    <section id="contacto" class="reveal" style="border-bottom: none;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">07</span>
+          <h2 class="section-title">Contacto</h2>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-image-wrapper">
+            <img src="assets/images/fotografia_profesional.webp" alt="David Todolí - Fotografía Profesional" class="contact-image" id="contact-portrait-img" loading="lazy">
+          </div>
+          
+            <h3 class="contact-tagline">¿Hablamos?</h3>
+            <p class="contact-desc" style="font-size: 1.12rem; color: var(--text-primary); font-weight: 500; line-height: 1.5; margin-bottom: 8px;">Siempre estoy abierto a conocer nuevos proyectos, equipos y oportunidades donde pueda seguir aprendiendo, aportar valor y continuar desarrollando mi perfil profesional.</p>
+            <p class="contact-desc">Si consideras que mi perfil puede encajar en tu organización o simplemente quieres intercambiar ideas sobre estrategia, marketing o tecnología, estaré encantado de conversar contigo.<br><br>Puedes contactar conmigo por correo electrónico o conectar conmigo a través de LinkedIn.</p>
+            
+            <div class="contact-link-block">
+              <a href="mailto:Davidtodoli01@gmail.com" class="contact-item-link" id="contact-email">
+                Davidtodoli01@gmail.com
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+              </a>
+              <a href="https://wa.me/34644854038" target="_blank" rel="noopener" class="contact-item-link contact-whatsapp-link" id="contact-whatsapp" style="margin-top: 10px;">
+                Hablar por WhatsApp
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" style="margin-left: 4px; vertical-align: middle;"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.97C16.326 1.968 13.848.943 11.22.943c-5.445 0-9.87 4.373-9.874 9.8.001 2.12.552 4.189 1.596 5.973l-.999 3.646 3.734-.972zm11.144-7.464c-.268-.134-1.59-.783-1.836-.872-.247-.09-.427-.135-.607.135-.18.27-.697.872-.853 1.05-.157.18-.314.202-.583.068-1.093-.547-1.806-.97-2.522-2.18-.18-.312-.18-.686.069-.873.226-.226.5-.583.75-.875.074-.087.123-.174.184-.294.062-.12.031-.225-.015-.315-.045-.09-.427-1.03-.585-1.41-.154-.372-.323-.322-.427-.327-.11-.006-.236-.008-.363-.008-.127 0-.334.047-.509.24-.175.192-.667.652-.667 1.59s.683 1.84 1.776 1.99c.11.015 2.152 3.284 5.213 4.605.728.314 1.296.501 1.739.641.73.232 1.396.2 1.922.12.585-.088 1.59-.649 1.815-1.277.225-.627.225-1.165.157-1.277-.067-.113-.247-.18-.515-.315z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/david-todoli-fortu%C3%B1o-782a7b206/" target="_blank" rel="noopener" class="contact-item-link" id="contact-linkedin" style="margin-top: 10px;">
+                Conectar en LinkedIn 
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-left: 2px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"></path></svg>
+              </a>
+              <a href="assets/documents/cv_david_todoli.pdf" download="CV_David_Todoli.pdf" class="contact-item-link contact-cv-link" id="contact-cv" style="margin-top: 10px;">
+                Descargar CV (PDF)
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-left: 2px;"><path d="M12 5v14M19 12l-7 7-7-7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2026 David Todolí. Todos los derechos reservados. Diseñado con enfoque estratégico.</p>
+    </div>
+  </footer>
+  </div> <!-- .content-wrapper -->
+  </div> <!-- .site-wrapper -->
+
+
+
+  <script src="js/main.js?v=1.0.3"></script>
+</body>
+</html>
