@@ -2,7 +2,7 @@
 
 :root {
   /* Color Palette - Premium Editorial Light Refined */
-  --bg-primary: #ffffff;      /* Rich travertine warm paper / sandstone */
+  --bg-primary: #f5f4ef;      /* Rich travertine warm paper / sandstone */
   --bg-secondary: #ffffff;    /* Pure paper white for high-contrast cells */
   --bg-tertiary: #e9e8e0;     /* Travertine shadow / panel background */
   --bg-glass: rgba(245, 244, 239, 0.85);
