@@ -2115,3 +2115,346 @@ body.intro-lock {
   transform: translateY(0);
 }
 
+/* ==========================================================================
+   OPTIMIZACIONES EXCLUSIVAS PARA MÓVIL Y TABLET (Pantallas < 1024px)
+   ========================================================================== */
+@media (max-width: 1023px) {
+  /* 1. Espaciados Generales y Altura de Sección */
+  section {
+    padding: var(--spacing-lg) 0 !important; /* 4rem en lugar de 8rem */
+  }
+
+  .section-header {
+    margin-bottom: var(--spacing-md) !important; /* 2rem en lugar de 4rem */
+    text-align: center;
+    align-items: center;
+  }
+  
+  .section-intro {
+    text-align: center;
+    margin: 0 auto var(--spacing-md) auto;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 5vw, 2.4rem) !important; /* Más compacto y elegante */
+  }
+
+  /* 2. Optimización Sección Hero */
+  .hero {
+    min-height: auto !important; /* Evitar que ocupe toda la pantalla */
+    padding-top: calc(var(--header-height) + 1rem) !important;
+    padding-bottom: var(--spacing-md) !important;
+  }
+
+  .hero-container-grid {
+    gap: var(--spacing-md) !important;
+  }
+
+  .hero-content {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 6vw, 3rem) !important;
+    margin-bottom: var(--spacing-sm) !important; /* Más cerca de los textos */
+  }
+
+  .hero-desc {
+    font-size: 0.95rem !important;
+    margin-bottom: var(--spacing-md) !important; /* Más cerca de los botones */
+    max-width: 100%;
+  }
+
+  .hero-ctas {
+    justify-content: center;
+    gap: var(--spacing-xs) !important;
+  }
+
+  .hero-visual {
+    margin-top: var(--spacing-sm);
+  }
+
+  .hero-artwork-frame {
+    max-width: 250px !important; /* Imagen del Hero ligeramente reducida */
+    aspect-ratio: 4/5;
+  }
+
+  /* 3. Sección 02: Qué puedo aportar (Bento Cells) */
+  .aportar-editorial-grid {
+    margin-top: var(--spacing-md) !important;
+  }
+
+  .aportar-block {
+    min-height: auto !important; /* No forzar celdas innecesariamente altas */
+    padding: var(--spacing-sm) !important; /* Padding compacto de 1rem */
+  }
+
+  .block-content-wrapper {
+    align-items: center;
+    text-align: center;
+  }
+
+  .block-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px !important;
+    margin-bottom: var(--spacing-xs) !important;
+  }
+
+  .block-title {
+    font-size: 1.35rem !important;
+  }
+
+  .block-desc {
+    font-size: 0.88rem !important;
+    text-align: center;
+    margin: 0 auto var(--spacing-sm) auto !important;
+    max-width: 100%;
+  }
+
+  .block-focus-list {
+    justify-content: center;
+    padding-top: var(--spacing-xs) !important;
+  }
+  
+  .block-num {
+    display: none !important; /* Esconder números absolutos flotantes para limpiar el Bento */
+  }
+
+  /* 4. Sección 03: Competencias y herramientas */
+  .skills-tools-grid {
+    gap: var(--spacing-md) !important;
+    margin-top: var(--spacing-md) !important;
+  }
+
+  .skills-cajon {
+    padding: 20px !important; /* Más compacto */
+  }
+
+  .cajon-header {
+    text-align: center;
+    align-items: center;
+  }
+
+  .cajon-title {
+    font-size: 1.3rem !important;
+  }
+
+  .cajon-intro {
+    text-align: center;
+    font-size: 0.88rem !important;
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .tool-category-card {
+    padding: 12px 0 !important;
+  }
+
+  .tool-category-header {
+    justify-content: center;
+  }
+
+  .tool-badges {
+    justify-content: center;
+  }
+
+  .tool-badge-item {
+    font-size: 0.72rem !important;
+    padding: 4px 10px !important;
+  }
+
+  /* 5. Sección 04: Caso Principal (TUATEAM) */
+  .tuateam-case {
+    margin-top: var(--spacing-md) !important;
+  }
+
+  .tuateam-main {
+    padding: 20px !important;
+    text-align: center;
+  }
+
+  .tuateam-badge {
+    margin-bottom: var(--spacing-xs) !important;
+  }
+
+  .tuateam-title {
+    font-size: clamp(1.6rem, 5vw, 2.2rem) !important;
+  }
+
+  .tuateam-tagline {
+    font-size: 1rem !important;
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .tuateam-mission {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .tuateam-highlights {
+    gap: var(--spacing-xs) !important;
+    margin-top: var(--spacing-sm) !important;
+    justify-items: center;
+  }
+
+  .highlight-item {
+    align-items: center;
+  }
+
+  .highlight-label {
+    font-size: 0.75rem !important;
+  }
+
+  .highlight-val {
+    font-size: 0.95rem !important;
+  }
+
+  .tuateam-side {
+    padding: 20px !important;
+    gap: var(--spacing-sm) !important;
+  }
+
+  .tuateam-side-block h4 {
+    text-align: center;
+    border-left: none !important;
+    border-bottom: 2px solid var(--accent);
+    padding-left: 0 !important;
+    padding-bottom: 4px;
+    display: inline-block;
+    margin: 0 auto var(--spacing-xs) auto;
+  }
+
+  /* 6. Sección 05: Casos de Estudio */
+  .cases-selector {
+    justify-content: center;
+    margin-bottom: var(--spacing-sm) !important;
+  }
+
+  .selector-btn {
+    font-size: 1.1rem !important;
+    padding: var(--spacing-xs) var(--spacing-xs) !important;
+  }
+
+  .case-grid {
+    gap: var(--spacing-sm) !important;
+    margin-top: var(--spacing-sm) !important;
+  }
+
+  .case-body {
+    gap: var(--spacing-sm) !important;
+  }
+
+  .case-block {
+    text-align: center;
+  }
+
+  .case-block h4 {
+    margin-bottom: 4px !important;
+  }
+
+  .case-block p {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .case-sidebar {
+    padding: var(--spacing-sm) !important;
+    align-self: stretch !important;
+  }
+
+  .sidebar-title {
+    text-align: center;
+    font-size: 1.1rem !important;
+  }
+
+  .sidebar-item {
+    align-items: center;
+    text-align: center;
+  }
+
+  /* 7. Sección 06: Evidencias */
+  .evidence-grid {
+    margin-top: var(--spacing-md) !important;
+  }
+
+  .evidence-card {
+    padding: var(--spacing-sm) !important;
+    min-height: auto !important; /* Permitir tamaño automático compacto */
+    align-items: center;
+    text-align: center;
+  }
+
+  .evidence-meta {
+    align-items: center;
+  }
+
+  .evidence-badge {
+    align-self: center !important;
+  }
+
+  .evidence-title {
+    font-size: 1.2rem !important;
+  }
+
+  .evidence-desc {
+    font-size: 0.85rem !important;
+  }
+
+  .evidence-action {
+    align-self: center !important;
+    margin-top: var(--spacing-sm) !important;
+  }
+
+  /* 8. Sección 07: Formación (Tighter items) */
+  .education-list {
+    margin-top: var(--spacing-md) !important;
+    gap: var(--spacing-sm) !important;
+  }
+
+  .education-item {
+    padding-left: var(--spacing-sm) !important;
+  }
+
+  .edu-title {
+    font-size: 1.15rem !important;
+  }
+
+  /* 9. Sección 08: Contacto y Footer */
+  .contact-grid {
+    gap: var(--spacing-md) !important;
+    margin-top: var(--spacing-md) !important;
+  }
+
+  .contact-image-wrapper {
+    max-width: 220px !important; /* Ligeramente más pequeña para móvil */
+    margin: 0 auto;
+  }
+
+  .contact-details {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-tagline {
+    font-size: 1.6rem !important;
+  }
+
+  .contact-desc {
+    font-size: 0.95rem !important;
+  }
+
+  .contact-link-block {
+    align-items: center;
+  }
+
+  .contact-item-link {
+    font-size: clamp(1.2rem, 3vw, 1.5rem) !important;
+    justify-content: center;
+  }
+}
+
+
