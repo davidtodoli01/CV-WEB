@@ -2498,8 +2498,8 @@ body.intro-lock {
   /* Mostrar la etiqueta de Disponible dentro del menú cuando esté abierto */
   .site-header.active .status-badge {
     display: inline-flex !important;
-    position: absolute !important;
-    bottom: 120px !important; /* Encima de los datos de localización */
+    position: fixed !important;
+    bottom: 110px !important; /* Encima de los datos de localización */
     left: 16px !important;
     z-index: 1000 !important;
   }
