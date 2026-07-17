@@ -2455,6 +2455,90 @@ body.intro-lock {
     font-size: clamp(1.2rem, 3vw, 1.5rem) !important;
     justify-content: center;
   }
+
+  /* 10. Ajustes del Menú Superior y Cabecera */
+  .site-header {
+    height: 60px !important; /* Altura más compacta y estilizada */
+    padding: 0 16px !important; /* Margen horizontal óptimo en móvil */
+  }
+
+  .nav-container {
+    top: 60px !important;
+    height: calc(100vh - 60px) !important;
+    padding: var(--spacing-md) 16px !important;
+  }
+
+  .header-top {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .logo-wrapper {
+    max-width: 75% !important; /* Prevenir que pise el botón hamburguesa */
+  }
+
+  .logo {
+    font-size: 1.15rem !important; /* Más compacto en móvil */
+  }
+
+  .header-subtitle {
+    font-size: 0.58rem !important; /* Más pequeño para evitar desbordes */
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important; /* Añadir puntos suspensivos si no cabe */
+    max-width: 100% !important;
+  }
+
+  .site-header .status-badge {
+    display: none !important; /* Ocultar en la barra fija para evitar saturación de elementos */
+  }
+
+  /* Mostrar la etiqueta de Disponible dentro del menú cuando esté abierto */
+  .site-header.active .status-badge {
+    display: inline-flex !important;
+    position: absolute !important;
+    bottom: 120px !important; /* Encima de los datos de localización */
+    left: 16px !important;
+    z-index: 1000 !important;
+  }
+
+  .burger-btn {
+    width: 32px !important;
+    height: 32px !important; /* Área de click táctil optimizada */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-end !important;
+    gap: 5px !important;
+  }
+
+  .burger-line {
+    width: 20px !important;
+    height: 2px !important;
+  }
+  
+  .burger-btn .burger-line:first-child {
+    width: 20px !important;
+  }
+  
+  .burger-btn .burger-line:last-child {
+    width: 14px !important; /* Hamburguesa asimétrica de estilo premium */
+    transition: all var(--transition-fast);
+  }
+
+  .site-header.active .burger-btn .burger-line:last-child {
+    width: 20px !important;
+  }
+
+  .nav-links {
+    gap: var(--spacing-sm) !important;
+  }
+
+  .nav-link {
+    font-size: clamp(1.6rem, 6vw, 2.2rem) !important; /* Ajuste tipográfico equilibrado */
+  }
 }
 
 
