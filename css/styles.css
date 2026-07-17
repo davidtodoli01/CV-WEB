@@ -2456,57 +2456,64 @@ body.intro-lock {
     justify-content: center;
   }
 
-  /* 10. Ajustes del Menú Superior y Cabecera */
+  /* 10. Ajustes del Menú Superior y Cabecera (Mobile Drawer Flex Layout) */
   .site-header {
-    height: 60px !important; /* Altura más compacta y estilizada */
-    padding: 0 16px !important; /* Margen horizontal óptimo en móvil */
+    height: 60px !important; 
+    padding: 0 16px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease !important;
   }
 
-  .nav-container {
-    top: 60px !important;
-    height: calc(100vh - 60px) !important;
-    padding: var(--spacing-md) 16px !important;
+  .site-header.active {
+    height: 100vh !important; /* Expande al alto de pantalla */
+    background-color: var(--bg-primary) !important;
+    justify-content: space-between !important;
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
   }
 
   .header-top {
-    height: 100% !important;
+    height: 40px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
+    width: 100% !important;
+    flex-shrink: 0 !important;
   }
 
   .logo-wrapper {
-    max-width: 75% !important; /* Prevenir que pise el botón hamburguesa */
+    max-width: 75% !important;
   }
 
   .logo {
-    font-size: 1.15rem !important; /* Más compacto en móvil */
+    font-size: 1.15rem !important;
   }
 
   .header-subtitle {
-    font-size: 0.58rem !important; /* Más pequeño para evitar desbordes */
+    font-size: 0.58rem !important;
     white-space: nowrap !important;
     overflow: hidden !important;
-    text-overflow: ellipsis !important; /* Añadir puntos suspensivos si no cabe */
+    text-overflow: ellipsis !important;
     max-width: 100% !important;
   }
 
+  /* Ocultar badge de Disponible por defecto en la barra compacta */
   .site-header .status-badge {
-    display: none !important; /* Ocultar en la barra fija para evitar saturación de elementos */
+    display: none !important;
   }
 
-  /* Mostrar la etiqueta de Disponible dentro del menú cuando esté abierto */
+  /* Mostrar el badge debajo de los enlaces de navegación cuando el menú está abierto */
   .site-header.active .status-badge {
     display: inline-flex !important;
-    position: fixed !important;
-    bottom: 110px !important; /* Encima de los datos de localización */
-    left: 16px !important;
-    z-index: 1000 !important;
+    margin: var(--spacing-sm) auto 0 auto !important; /* Centrado debajo de los links */
+    align-self: center !important;
   }
 
   .burger-btn {
     width: 32px !important;
-    height: 32px !important; /* Área de click táctil optimizada */
+    height: 32px !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
@@ -2524,7 +2531,7 @@ body.intro-lock {
   }
   
   .burger-btn .burger-line:last-child {
-    width: 14px !important; /* Hamburguesa asimétrica de estilo premium */
+    width: 14px !important;
     transition: all var(--transition-fast);
   }
 
@@ -2532,12 +2539,62 @@ body.intro-lock {
     width: 20px !important;
   }
 
+  /* El contenedor de navegación se vuelve estático y flexible dentro del contenedor del Header */
+  .nav-container {
+    position: static !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: var(--spacing-sm) 0 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(10px) !important;
+    transition: all var(--transition-smooth) !important;
+    border-top: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    flex: 1 !important; /* Toma el espacio disponible en el medio */
+  }
+
+  .site-header.active .nav-container {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+  }
+
   .nav-links {
-    gap: var(--spacing-sm) !important;
+    gap: var(--spacing-xs) !important;
+    text-align: center !important;
   }
 
   .nav-link {
-    font-size: clamp(1.6rem, 6vw, 2.2rem) !important; /* Ajuste tipográfico equilibrado */
+    font-size: clamp(1.4rem, 6vw, 1.8rem) !important;
+    justify-content: center !important;
+    width: auto !important;
+  }
+
+  /* El footer del menú (metadatos y redes) se vuelve estático al fondo de la cabecera expandida */
+  .header-bottom {
+    position: static !important;
+    width: 100% !important;
+    padding: var(--spacing-sm) 0 0 0 !important;
+    border-top: 1px solid var(--border-color) !important;
+    background: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(10px) !important;
+    transition: all var(--transition-smooth) !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  .site-header.active .header-bottom {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
   }
 }
 
