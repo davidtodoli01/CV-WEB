@@ -428,19 +428,25 @@ section {
     height: 100vh;
     border-right: 1px solid var(--border-color);
     border-bottom: none;
-    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md) var(--spacing-md);
+    padding: var(--spacing-md) var(--spacing-md) 1.25rem var(--spacing-md);
     background-color: var(--bg-secondary);
     justify-content: space-between;
+    overflow-y: auto;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .site-header::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
   }
 
   .header-top {
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--spacing-md);
+    gap: 0.75rem;
   }
 
   .status-badge {
-    margin-top: var(--spacing-xs);
+    margin-top: 2px;
   }
 
   .burger-btn {
@@ -460,22 +466,23 @@ section {
     transform: none;
     border: none;
     z-index: 1;
+    display: flex !important;
   }
 
   .nav-links {
-    gap: var(--spacing-sm);
+    gap: 4px;
   }
 
   .nav-link {
-    font-size: 1.45rem;
+    font-size: clamp(1.15rem, 1.3vw, 1.35rem);
     font-weight: 400;
     letter-spacing: -0.01em;
-    padding: var(--spacing-xs) 0;
+    padding: 4px 0;
   }
 
   .nav-num {
-    font-size: 0.72rem;
-    min-width: 24px;
+    font-size: 0.7rem;
+    min-width: 22px;
   }
 
   .header-bottom {
@@ -483,7 +490,7 @@ section {
     bottom: auto;
     left: auto;
     width: 100%;
-    padding: var(--spacing-md) 0 0 0;
+    padding: 0.75rem 0 0 0;
     border-top: 1px solid var(--border-color);
     background: none;
     opacity: 1;
@@ -492,15 +499,16 @@ section {
     z-index: 1;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--spacing-sm);
+    gap: 0.5rem;
+    display: flex !important;
   }
   
   .header-socials {
     width: 100%;
     justify-content: space-between;
     border-top: 1px solid var(--border-color);
-    padding-top: var(--spacing-sm);
-    margin-top: var(--spacing-xs);
+    padding-top: 0.5rem;
+    margin-top: 2px;
   }
 }
 
