@@ -2550,13 +2550,14 @@ body.intro-lock {
     transform: translateY(10px) !important;
     transition: all var(--transition-smooth) !important;
     border-top: none !important;
-    display: flex !important;
+    display: none !important; /* Ocultar por defecto para no ocupar espacio en flex */
     flex-direction: column !important;
     justify-content: center !important;
     flex: 1 !important; /* Toma el espacio disponible en el medio */
   }
 
   .site-header.active .nav-container {
+    display: flex !important; /* Mostrar cuando la cabecera está activa */
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateY(0) !important;
@@ -2584,7 +2585,7 @@ body.intro-lock {
     visibility: hidden !important;
     transform: translateY(10px) !important;
     transition: all var(--transition-smooth) !important;
-    display: flex !important;
+    display: none !important; /* Ocultar por defecto para no ocupar espacio en flex */
     flex-direction: row !important;
     justify-content: space-between !important;
     align-items: center !important;
@@ -2592,6 +2593,7 @@ body.intro-lock {
   }
 
   .site-header.active .header-bottom {
+    display: flex !important; /* Mostrar cuando la cabecera está activa */
     opacity: 1 !important;
     visibility: visible !important;
     transform: translateY(0) !important;
